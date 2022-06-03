@@ -1,8 +1,8 @@
 #include <iostream>
-//Retorna o menor valor do vetor [Funciona] - Otimizado
+
+//Function returns the smallest number in the vector
 
 int smallest(int* v, int i, int k){
-
     if(i == k)
         return v[i];
     else{
@@ -11,17 +11,14 @@ int smallest(int* v, int i, int k){
         int j = (i+k)/2;
 
         //Conquer
-        
         int num1 = smallest(v, i, j);
         int num2 = smallest(v, j+1, k);
 
         //Combine
-        if(num1 < num2){
+        if(num1 < num2)
             return num1;
-        }
-        else{
+        else
             return num2;
-        }
     }
 }
 
