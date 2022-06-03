@@ -1,6 +1,6 @@
 #include <iostream>
 
-//Function returns the smallest number in the vector with complexity n^2
+//Function returns the smallest number in the vector with complexity n
 
 int smallest(int* v, int n){
     if(n == 1){
