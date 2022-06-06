@@ -3,9 +3,8 @@
 //Function returns the smallest number in the vector
 
 int smallest(int* v, int n){
-    if(n == 1){
-        return v[0];
-    }
+    if(n == 1)
+        return v[0]; 
     else{
         int m = smallest(v, n-1);
         if(m < v[n-1])
