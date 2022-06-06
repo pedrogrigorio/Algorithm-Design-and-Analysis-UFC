@@ -7,7 +7,7 @@ int greatest(int* v, int i, int k){
     if(i == k)
         return i;
     else{
-        //Dividir
+        //Divide
         int j = (i+k)/2;
 
         //Conquer
