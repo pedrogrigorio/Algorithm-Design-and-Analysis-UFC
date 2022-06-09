@@ -3,6 +3,8 @@
 // Function return the smallest difference in an array of integers sorted in non-decreasing order
 
 int smallestDifference(int* v, int i, int k){
+    if(k-i == 0)
+        return v[k];
     if(k-i == 1)
         return v[k]-v[i];
     else{
