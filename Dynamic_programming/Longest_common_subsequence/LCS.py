@@ -1,6 +1,3 @@
-#X = ['B', 'A', 'C', 'B', 'A', 'D']
-#Y = ['A', 'B', 'A', 'Z', 'D', 'C']
-
 def LCS(S,X,Y,i,j):
     if(i == 0 or j == 0):
         S[i][j] = 0
@@ -18,7 +15,6 @@ Y_lenght = int(input("Enter size of first array: "))
 for i in range(X_lenght):
     str = input("Enter first string: ")
     X.append(str)
-X
 
 for i in range(Y_lenght):
     str = input("Enter second string: ")
